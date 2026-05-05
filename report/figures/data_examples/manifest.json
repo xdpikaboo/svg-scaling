@@ -1,0 +1,50 @@
+[
+  {
+    "k": 0,
+    "source": "fonts",
+    "n_chars": 393,
+    "rank_in_train": 47729,
+    "png": "report\\figures\\data_examples\\example_0.png",
+    "render_ok": true
+  },
+  {
+    "k": 1,
+    "source": "fonts",
+    "n_chars": 558,
+    "rank_in_train": 143188,
+    "png": "report\\figures\\data_examples\\example_1.png",
+    "render_ok": true
+  },
+  {
+    "k": 2,
+    "source": "fonts",
+    "n_chars": 679,
+    "rank_in_train": 238647,
+    "png": "report\\figures\\data_examples\\example_2.png",
+    "render_ok": true
+  },
+  {
+    "k": 3,
+    "source": "fonts",
+    "n_chars": 801,
+    "rank_in_train": 334105,
+    "png": "report\\figures\\data_examples\\example_3.png",
+    "render_ok": true
+  },
+  {
+    "k": 4,
+    "source": "fonts",
+    "n_chars": 1012,
+    "rank_in_train": 429564,
+    "png": "report\\figures\\data_examples\\example_4.png",
+    "render_ok": true
+  },
+  {
+    "k": 5,
+    "source": "fonts",
+    "n_chars": 1836,
+    "rank_in_train": 525023,
+    "png": "report\\figures\\data_examples\\example_5.png",
+    "render_ok": true
+  }
+]

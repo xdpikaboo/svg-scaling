@@ -1,0 +1,14 @@
+extends: mup_tiny.yaml
+name: tiny_long
+parameterization: mup
+
+# Bonus run for report Appendix C: train mup_tiny for 15 epochs over
+# the 68M-token corpus (~655:1 tokens/param, wildly past
+# Chinchilla's 20:1). Tests whether grammar emerges with enough training.
+
+schedule:
+  warmup_steps: 196
+  max_steps: 1965
+
+optimizer:
+  lr: 1.0e-1   # µP winning LR transfers across widths and across training durations

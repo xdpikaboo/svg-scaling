@@ -1,0 +1,11 @@
+extends: base.yaml
+name: sp_large
+
+model:
+  n_layer: 8
+  n_head: 8
+  d_model: 384
+  d_ff: 1536                # 4 x d_model
+
+batch:
+  micro_batch: 16           # 16 x 1024 x 32 grad_accum = 524288

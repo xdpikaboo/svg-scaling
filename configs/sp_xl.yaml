@@ -1,0 +1,13 @@
+extends: base.yaml
+name: sp_xl
+
+model:
+  n_layer: 10
+  n_head: 8
+  d_model: 512
+  d_ff: 2048                # 4 x d_model
+
+batch:
+  micro_batch: 8            # 8 x 1024 x 64 grad_accum = 524288
+                            # If OOM on RTX 3060 (6 GB), drop to 4 + grad_accum 128
+                            # and record in run JSON (the project spec).

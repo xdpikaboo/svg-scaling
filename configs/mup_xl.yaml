@@ -1,0 +1,14 @@
+extends: base.yaml
+name: mup_xl
+parameterization: mup
+
+model:
+  n_layer: 10
+  n_head: 8
+  d_model: 512
+  d_ff: 2048                # 4 x d_model
+
+batch:
+  micro_batch: 8            # 8 x 1024 x 64 grad_accum = 524288
+                            # If OOM (untied head adds ~2 MB to xl) drop
+                            # micro_batch=4 / grad_accum=128 and record.

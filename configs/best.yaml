@@ -1,0 +1,14 @@
+extends: mup_xl.yaml
+name: best
+parameterization: mup        # mup_xl confirmed transfer-stable in Phase 9
+
+# Best model: 3 epochs over the train corpus.
+# At 68M training tokens with a 524288-token batch, ~390 steps total.
+# (Per-corpus values are recomputed at runtime by scripts/15_full_pipeline.py
+# and other rerun helpers; the values below are placeholders for a manual run.)
+schedule:
+  warmup_steps: 14
+  max_steps: 138
+
+optimizer:
+  lr: 1.0e-1                 # winning µP LR from the Phase 9 sweep

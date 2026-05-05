@@ -1,0 +1,12 @@
+extends: base.yaml
+name: mup_tiny
+parameterization: mup
+
+model:
+  n_layer: 2
+  n_head: 4
+  d_model: 128
+  d_ff: 512                 # 4 x d_model
+
+batch:
+  micro_batch: 64           # 64 x 1024 x 8 grad_accum = 524288

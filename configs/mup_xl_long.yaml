@@ -1,0 +1,14 @@
+extends: mup_xl.yaml
+name: mup_xl_long
+parameterization: mup
+
+# Long training run for the report's Appendix D.
+# 15 epochs over the 68M-token corpus,
+# ~28:1 tokens/param (past Chinchilla 20:1).
+
+schedule:
+  warmup_steps: 196
+  max_steps: 1965
+
+optimizer:
+  lr: 1.0e-1   # winning muP LR (transfers across widths)

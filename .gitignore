@@ -1,0 +1,12 @@
+data/
+checkpoints/
+runs/
+*.bin
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+report/report.pdf
+report/*.aux
+report/*.log
+report/*.out
